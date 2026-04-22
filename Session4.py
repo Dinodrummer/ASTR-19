@@ -5,19 +5,20 @@ class Animal:
         self.eyesCount = eyesCount
         self.tail = tail
         self.furry = furry
-    def man(self):
+    def print(self):
         print(f"armLength: {self.armLength} - Length of arms (FLOAT)")
-        print(f"legLength: {self.legLength} - Length of arms (FLOAT)")
-        print(f"eyesCount: {self.eyesCount} - Length of arms (INT)")
-        print(f"tail: {self.tail} - Length of arms (BOOL)")
-        print(f"furry: {self.furry} - Length of arms (BOOL)")
+        print(f"legLength: {self.legLength} - Length of legs (FLOAT)")
+        print(f"eyesCount: {self.eyesCount} - Number of eyes (INT)")
+        print(f"tail: {self.tail} - Has a tail (BOOL)")
+        print(f"furry: {self.furry} - Is furry (BOOL)")
 
 
     
 
 
 def main():
-    
+    animal = Animal(1.1,2.3,1,True,False)
+    animal.print()
 
 
 if __name__ == '__main__':
